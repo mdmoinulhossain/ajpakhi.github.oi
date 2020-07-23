@@ -46,7 +46,7 @@
 
 .topnav a.active {
   background-color: #4CAF50;
-  color: white;
+  color: #fff;
 }
 
 .topnav .icon {
@@ -514,12 +514,12 @@ textarea.input {
 .category-nav .category-header>i {
   float: right;
   line-height: 20px;
+  display: none;
 }
 
 .category-nav .category-list {
   position: absolute;
   width: 270px;
-  background-color: #FFF;
   border-left: 1px solid #DADADA;
   border-right: 1px solid #DADADA;
   border-bottom: 1px solid #DADADA;
@@ -528,8 +528,9 @@ textarea.input {
   transition: 0.3s all;
   font-size: 15px;
   font-weight: bold;
+  height: initial;
 }
-
+/*
 .category-nav.show-on-click .category-list {
   opacity: 0;
   visibility: hidden;
@@ -563,7 +564,7 @@ textarea.input {
 
 .category-nav .category-list>li>a:hover, .category-nav .category-list>li>a:focus, .category-nav .category-list>li.dropdown.open>a {
   color: #00cc00;
-}
+}*/
 
 /*----------------------------*\
 	Menu nav
@@ -745,6 +746,11 @@ textarea.input {
     -ms-transform: translate(0px, 0px);
     transform: translate(0px, 0px);
   }
+
+
+
+
+
   .category-nav .category-list, .menu-nav .menu-list {
     display: none;
     overflow-y: scroll;
@@ -757,6 +763,10 @@ textarea.input {
   .menu-nav .menu-header, .category-nav .category-header {
     cursor: pointer;
   }
+
+  .category-nav .category-header>i{
+    display: block;
+  }
   .category-nav {
     float: none;
     width: 100%;
@@ -764,6 +774,10 @@ textarea.input {
   .category-nav .category-list {
     position: static;
   }
+
+
+
+
   .menu-nav .menu-header {
     display: block;
   }
@@ -1833,3 +1847,76 @@ textarea.input {
             text-decoration: none;
             cursor: pointer;
         }
+
+
+
+/* relative sidenav, full height */
+.sidenav {
+  height: 900px;
+  width: auto;
+  position: relative;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding-top: 20px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #000;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #fff;
+  background:  #339933;
+}
+
+
+/* Add an active class to the active dropdown button */
+.dropdown-btn.active {
+  background-color: #339933;
+  color: #ffcc00;
+}
+
+.sidenav.active {
+  background-color: #339933;
+  color: #ffcc00;
+}
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #99ccff;
+  padding-left: 8px;
+}
+
+.dropdown-container1 {
+  display: none;
+  background-color: #ccffcc;
+  padding-left: 8px;
+}
+
+.dropdown-container2 {
+  display: none;
+  background-color: #80ffe5;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-angle-down {
+  float: right;
+  padding-right: 8px;
+}
