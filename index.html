@@ -39,8 +39,8 @@
 			</div>
 	  <a href="#home">Customer Sign Up</a>
 	  <a href="#contact">Product order video</a>
-	  <a href="#" id="marBtn">Marchant Account</a>
-	  <a href="#" id="affBtn">Affiliate Marketing</a>
+	  <a id="marBtn">Marchant Account</a>
+	  <a id="affBtn">Affiliate Marketing</a>
 	  <a href="#about">Track Order</a>
 	  <a href="javascript:void(0);" class="icon" onclick="bar()">
 	    <i class="fa fa-bars"></i>
@@ -137,11 +137,11 @@
 			<div id="responsive-nav" class="shadownav">
 				<!-- category nav -->
 				<div class="category-nav">
-					<span class="category-header">Categories <i class="fa fa-list"></i></span>
-					<ul class="category-list">					
+					<a class="category-header" href="javascript:void(0);" onclick="hp()">Categories <i onclick="hp()" class="fa fa-times"></i></a>
+					<ul class="category-list">				
 						
 						<div class="sidenav">
-							<a class="sidenavclose" onclick="hp()" href="javascript:void(0);"><i style="float: right;" class="fa fa-times"></i></a>
+							<!-- <a class="sidenavclose" onclick="hp()" href="javascript:void(0);"><i style="float: right;" class="fa fa-times"></i></a> -->
 						  
 						  <!--single dropdown-->
 						  <a class="dropdown-btn">Men's Fashion 

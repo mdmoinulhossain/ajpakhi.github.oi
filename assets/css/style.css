@@ -216,9 +216,8 @@ hr {
   width: 100%;
   height: 40px;
   padding: 0px 15px;
-  border: none;
-  background-color: transparent;
-  -webkit-box-shadow: 0px 0px 0px 1px #fff inset;
+  border:none;
+  background-color: #006666;
   transition: 3s all;
 }
 
@@ -226,6 +225,7 @@ hr {
 .input:focus {
   background: #006600;
   border: none;
+  box-shadow: 1px 0 0 1px #ff3300 inset;
 }
 
 textarea.input {
@@ -246,7 +246,6 @@ textarea.input {
 .input-checkbox input[type="checkbox"]:checked+label+.caption, .input-checkbox input[type="radio"]:checked+label+.caption {
   max-height: 800px;
 }
-
 /*
 	Lists
 --------------------*/
@@ -403,7 +402,7 @@ textarea.input {
   width: 80%;
   max-height: 70px;
 }
-.header-search {
+.header-search .search-input {
     display: inline;
 }
 }
