@@ -33,6 +33,7 @@
   color: #ffff00;
   border-bottom-left-radius: 45px;
   border-top-right-radius: 45px;
+  cursor: pointer;
 }
 
 .topnav a.active {
@@ -1934,4 +1935,52 @@ textarea.input {
 .fa-angle-down {
   float: right;
   padding-right: 8px;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    /*grid-template-rows: 200px 200px 200px;*/ 
+    background-color: transparent;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 204, 0.5);
+    border: 1px solid rgb(0, 153, 51);
+    text-align: center;
+    margin: 10px 10px;
+  }
+  .grid-item a img {
+    width: 200px;
+    height: 200px;
+  }
+
+@media only screen and (max-width: 991px) {
+  .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  size: 50%;
+  overflow-x: scroll;
+}
+.grid-item {
+  background-color: rgba(255, 255, 205, 0.5);
+  border: 1px solid rgba(0, 153, 51);
+  text-align: center;
+  }
+
+  .grid-item a img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .grid-item h2 {
+    font-size: 16px;
+  }
+  .grid-item button {
+    size: 50%;
+  }
+
+  .section .container .row .section-title .title {
+    font-size: 18px;
+  }
 }
